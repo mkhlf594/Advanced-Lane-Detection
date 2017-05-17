@@ -17,9 +17,9 @@
 [//]: # (Image References)
 
 [image1]: ./test_images/1.png 			"calibration"
-[image2]: ./test_images/sobel_x 	"Grayscaling"
-[image3]: ./test_images/s_image	 	"s_channel" 
-[image4]: ./test_images/binary_img 	"binary_image"
+[image2]: ./test_images/sobel_x.png 	"Grayscaling"
+[image3]: ./test_images/s_image.png	 	"s_channel" 
+[image4]: ./test_images/binary_img.png 	"binary_image"
 [image5]: ./test_images/bird_eye.png 	"Bird eye image"
 [image6]: ./test_images/poly_fit.png 	" Poly fit img"
 [image7]: ./test_images/final.png 		"final imag"
@@ -31,9 +31,7 @@
 
 ### 1. The first step in any camera-based measurement is to calibrate a camera to determine its intrinsic parameters (focal length and principle point coordinates) which are called camera matrix and to determine the radial and tangential coefficient. This can be done using a chess board with known numbers of corners in it x and y direstion. In this project, I used a chess board with 9 corners along x axis and 6 corners along y axis. Using OpenCV library and with more than 8 images of the chess board from different positions we can calibrate our camera.
 
-![alt text][image8]
-![alt text][image9]
-![alt text][image10]	
+![alt text][image8]		![alt text][image9]		![alt text][image10]	
 
 * After Calibration, we will get the internsic parameters and the distortion coefficients. 
 
@@ -44,9 +42,9 @@
 ---
 ### 3. The next step is to determine our lines which tend to be vertical so, instead of using Canny edge detection we will use one part of it, Sobel gradient by x. So, first we convert our image to a gray scale one then we will take the gradient by x and convert this gradient imag to a binary one using a proper threshold as in the next picture.
 ![alt text][image2]
-### The problem of using this approach only is that in shadow areas the gradient will be close to zeros, also if we have yellow lane lines we will not be able to differ them from the road in gray scale images. So, HLS color space will be used. To be more specific, the S channel in HLS color space will be used because it is robust against chaning in the brightness so, it will give same result in sunny and shadow areas and the yellow line will be visible. An example of the output of S channel is in the next picture.
+The problem of using this approach only is that in shadow areas the gradient will be close to zeros, also if we have yellow lane lines we will not be able to differ them from the road in gray scale images. So, HLS color space will be used. To be more specific, the S channel in HLS color space will be used because it is robust against chaning in the brightness so, it will give same result in sunny and shadow areas and the yellow line will be visible. An example of the output of S channel is in the next picture.
 ![alt text][image3]
-### Using a combination of the gradient image and the S channel image will be a good idea. The next picture shows a combination of these two images.
+Using a combination of the gradient image and the S channel image will be a good idea. The next picture shows a combination of these two images.
 ![alt text][image4]
 
 ---
