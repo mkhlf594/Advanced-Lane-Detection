@@ -17,9 +17,9 @@
 [//]: # (Image References)
 
 [image1]: ./test_images/1.png 			"calibration"
-[image2]: ./test_images/sobel_x.png 	"Grayscaling"
-[image3]: ./test_images/s_image.png	 	"s_channel" 
-[image4]: ./test_images/binary_img.png 	"binary_image"
+[image2]: ./test_images/sobel_x 	"Grayscaling"
+[image3]: ./test_images/s_image	 	"s_channel" 
+[image4]: ./test_images/binary_img 	"binary_image"
 [image5]: ./test_images/bird_eye.png 	"Bird eye image"
 [image6]: ./test_images/poly_fit.png 	" Poly fit img"
 [image7]: ./test_images/final.png 		"final imag"
