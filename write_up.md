@@ -72,4 +72,9 @@
 ### Further discussion
 I think this work is good in ideal conditions. when we have good road, not bumpy one, when the lane lines are clear. One challenge is what will happen when one of these lane lines is erased due to bad weather or bad infrastracture. Also, with bumpy road it will be difficult to determine the two lines. I think it needs a try to improve this algorithm to be more robust against bumpy road and it is worth to think about the situations when  one or both of the lane lines disappear.
 
+<<<<<<< HEAD
 For the code, please check [here](Advanced-Lane-Detection.ipynb) and for a video recording, please check [here](https://youtu.be/63kZqN-IBro).
+=======
+
+For the code, please check [here] (Advanced Lane Detection.ipynb) and for a video recording, please check [here](https://youtu.be/MYAXK1TerF8).
+>>>>>>> ddd45d3ea09fa2a23c5682774f78c47ca14c8acf
