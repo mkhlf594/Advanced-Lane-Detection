@@ -60,7 +60,7 @@
 ![alt text][image6]
 
 ---
-### 6. The radius of the road curvature can be calculated using the polynomial coefficients according to the following equation 
+### 6. The radius of the road curvature can be calculated using the polynomial coefficients. 
 
 ---
 ### 7. getting two lane lines allows us to get the offset of the camera from the center of the lane. To do that we first get the lane width by getting the difference between the first (from the bottom) right point and the first left point. Then, we get the distance from the right and the left borders of the image to the lane lines by subtracting the lane width from the image width and dividing by 2. This distance will be the proper distance if that car is located at the center of the lane. To get  the offset can we should subtract the the value of the first right point and the proper distance of center-located car from the image width. If the offset is positive it means that the car is shifted toward the right direction, if it is negative it means that the car is shifted to the left direction. 
@@ -68,6 +68,8 @@
 ### An image after determining, lanel lines, the curavter and the distance from the center can be viewed as follows:
 ![alt text][image7] 
 
+---
+### Further discussion
+I think this work is good in ideal conditions. when we have good road, not bumpy one, when the lane lines are clear. One challenge is what will happen when one of these lane lines is erased due to bad weather or bad infrastracture. Also, with bumpy road it will be difficult to determine the two lines. I think it needs a try to improve this algorithm to be more robust against bumpy road and it is worth to think about the situations when  one or both of the lane lines disappear.
 
-
-For the code, please check [here](Advanced Lane Detection.ipynb) and for a video recording, please check [here](https://youtu.be/MYAXK1TerF8).
+For the code, please check [here](Advanced-Lane-Detection.ipynb) and for a video recording, please check [here](https://youtu.be/63kZqN-IBro).
